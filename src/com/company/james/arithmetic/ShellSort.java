@@ -8,7 +8,7 @@ public class ShellSort extends Sort {
     @Override
     public void sort() {
         int N = array.length;
-        for (int gap = N / 2; gap > 0; gap /= 2) {
+        for (int gap = N; gap > 0; gap /= 2) {
             for (int i = gap; i < N; i++) {
                 for (int j = i; j > 0; j--) {
                     if (array[j - 1] > array[j]) {
