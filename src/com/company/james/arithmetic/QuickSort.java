@@ -26,9 +26,9 @@ public class QuickSort extends Sort {
                     right--;
                 }
             }
-            array[left] = provid;
-            quickSort(leftBound, left - 1);
-            quickSort(left + 1, rightBound);
+            array[right] = provid;
+            quickSort(leftBound, right - 1);
+            quickSort(right + 1, rightBound);
         }
     }
 
