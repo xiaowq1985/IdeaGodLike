@@ -20,4 +20,8 @@ public abstract class Sort {
     public void display() {
         System.out.println(Arrays.toString(array));
     }
+
+    public boolean isBig(int i, int j) {
+        return array[i] > array[j] ? true : false;
+    }
 }
